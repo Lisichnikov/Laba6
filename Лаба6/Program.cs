@@ -40,6 +40,7 @@ new Customer ("Панькин", "Данила", "Сергеевич", "Kamenka",
                 }
             Console.WriteLine("------------------------------------------------");
 
+            
             Customer obj = new Customer(0);
             int i = 1;
             for (; i < 120000; i++)
@@ -48,6 +49,7 @@ new Customer ("Панькин", "Данила", "Сергеевич", "Kamenka",
             }
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("\nКонец");
+            
 
         }
     }

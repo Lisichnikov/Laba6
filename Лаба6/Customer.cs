@@ -17,6 +17,7 @@ namespace Лаба6
         public int bankaccountnumber;
         public int k;
 
+        // конструктор по умолчанию 
         public Customer(int i)
         {
             familyname = "unknown";
@@ -28,6 +29,7 @@ namespace Лаба6
             bankaccountnumber = 0;
             k = i;
         }
+        // конструктор с параметрами
         public Customer(string familyname, string name, string surname, string address, long phonenumber, long cardnumber, int bankaccountnumber)
         {
             this.familyname = familyname;
@@ -39,16 +41,18 @@ namespace Лаба6
             this.bankaccountnumber = bankaccountnumber;
         }
 
+        // деструктор
         ~Customer()
         {
             Console.WriteLine("Объект {0} уничтожен", k);
         }
 
+        // метод создающий и тут же уничтожающий объект
         public void objectGenerator(int i)
         {
             Customer customers = new Customer(i);
         }
-
+        
         public override string ToString()
         {
             return familyname + ", " + name + ", " + surname + ", " + address + ", " + phonenumber + ", " + cardnumber + ", " + bankaccountnumber + ", " + k;
