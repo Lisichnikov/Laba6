@@ -57,5 +57,10 @@ namespace Лаба6
         {
             return familyname + ", " + name + ", " + surname + ", " + address + ", " + phonenumber + ", " + cardnumber + ", " + bankaccountnumber + ", " + k;
         }
+
+        internal object OrderBy(Func<object, object> value)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
